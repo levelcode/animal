@@ -1,0 +1,537 @@
+@charset "utf-8";
+@import url("reset.css");
+
+@font-face {
+  font-family: 'PFFusionSansPro-Heavy';
+  src: url('../fonts/PFFusionSansPro-Heavy.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/PFFusionSansPro-Heavy.woff') format('woff'), 
+  url('../fonts/PFFusionSansPro-Heavy.ttf')  format('truetype'), 
+  url('../fonts/PFFusionSansPro-Heavy.svg#PFFusionSansPro-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+ }
+body { 
+	font-family: Helvetica, Arial, sans-serif; 
+	-webkit-font-smoothing: antialiased;
+	background: #f1efeb;
+	/*background: #050101;*/
+	color: #000;
+}
+
+*
+{
+	outline: none;
+}
+.clear
+{
+	clear: both;
+	width: 100%;
+}
+/*HEADER*/
+#wrapper
+{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	background: url(../images/bg.jpg) no-repeat;
+}
+header
+{
+	width: 100%;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+header .logo
+{
+	left: 35px;
+	margin: 42px 0 0 33px;
+	float: left;
+}
+header .logo_central
+{
+	display: block;
+	margin: 0px auto;
+	clear: both;
+}
+header .content_buscar
+{
+    float: right;
+    right: 35px;
+    margin: 40px 025px 0;
+    left: initial;
+    top: 0;
+    width: 235px;
+    height: 30px;
+}
+header .content_buscar input
+{
+	width: 166px;
+	height: 30px;
+	font-size: 12px;
+	border: 1px solid #9a9a9a;
+	padding: 0 30px 0 10px;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	background: #fff url(../images/buscador.png) no-repeat 95% center;
+	outline: none;
+}
+header .content_buscar .submit
+{
+    background: #1f7183;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    float: right;
+    box-sizing:initial;
+    color: #fff;
+    font-size: 11px;
+    padding: 0px;
+}
+header .content_video
+{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	max-width: 678px;
+	width: 100%;
+	height: 378px;
+	background: url(../images/celu.png) no-repeat;
+}
+header .content_video iframe
+{
+	width: 470px;
+	height: 265px;
+	left: 3px;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	top: 42px;
+}
+.content_buttons
+{
+	max-width: 680px;
+	width: 100%;
+	display: block;
+	margin: 50px auto 0;
+	height: 52px;
+	line-height: 52px;
+	overflow: hidden;
+}
+.content_buttons button
+{
+	float: left;
+	width: 58px;
+	height: 52px;
+	background: #fff;
+	border:  none;
+	margin: 0 5px 0 0;
+}
+.content_buttons button .active
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdacf7+0,44f9fa+100 */
+	background: rgb(253,172,247); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(253,172,247,1) 0%, rgba(68,249,250,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient( rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdacf7', endColorstr='#44f9fa',GradientType=0 ); /* IE6-9 */
+}
+.content_buttons button.Boton_macho
+{
+	background-image: url(../images/sex_dogs.png);
+	background-repeat: no-repeat;
+	background-position: 0px -54px;
+}
+.content_buttons button.Boton_macho.active
+{
+	background-position: 0px 0px;
+}
+.content_buttons button.Boton_hembra
+{
+	background-image: url(../images/sex_dogs.png);
+	background-repeat: no-repeat;
+	background-position: -64px 0px;
+}
+.content_buttons button.Boton_hembra.active
+{
+	background-position: -66px -56px;
+	background-size: 125px;
+}
+.content_buttons button.Boton_menor2 span,
+.content_buttons button.Boton_mayor2 span
+{
+	width: 100%;
+	height: 100%;
+	font-size: 29px;
+    line-height: 39px;
+	display: block;
+	background: rgb(253,172,247); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(253,172,247,1) 0%, rgba(68,249,250,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient( rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdacf7', endColorstr='#44f9fa',GradientType=0 ); /* IE6-9 */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.content_buttons p
+{
+	font-size: 25px;
+	color: #176882;
+	font-weight: 800;
+	float: left;
+	letter-spacing: -1px;
+	margin: 0 0 0 20px;
+}
+
+.content_galeria
+{
+	max-width: 995px;
+	width: 100%;
+	height: auto;
+	margin: 55px auto 10px;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.content_fotos
+{
+	width: 272px;
+	padding: 10px;
+	min-height: 305px;
+	height: 100%;
+	background: #fff;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 10% 0 80px;
+	position: relative;
+	box-shadow: 0px 0px 5px #737373;
+	box-sizing: content-box;
+}
+.content_fotos.content_fotos_2
+{
+	margin-top: -1%;
+}
+.content_fotos.content_fotos_popup
+{
+	width: 292px;
+	margin: 0px;
+	box-shadow: none;
+}
+.descripcion_perrito
+{
+	font-size: 12px;
+	padding: 15px 0;
+}
+.content_fotos:after {
+	left: 100%;
+	top: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.content_fotos .box_perrito a
+{
+	height: auto;
+	font-size: 13px;
+	color: #4e4e4e;
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
+	margin: 5px 0 15px;
+	float: left;
+	font-weight: 500;
+	position: relative;
+	z-index: 1000;
+	text-transform: uppercase;
+}
+.content_fotos .fotos_perrito
+{
+	margin: 0 auto;
+	display: block;
+	width: 270px;
+	position: relative;
+}
+.content_fotos .fotos_perrito .list
+{
+	width: 270px;
+	margin: 0 auto;
+	display: block;
+	height: 177px;
+	overflow: hidden;
+}
+.content_fotos .fotos_perrito .list div
+{
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+.content_fotos .fotos_perrito .list img
+{
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.content_fotos .fotos_perrito .mundo
+{
+	width: 18px;
+	height: 18px;
+	float: left;
+	background: url(../images/mundo.png) no-repeat center center;
+	margin: 12px 7px 0 0;
+}
+.content_fotos .fotos_perrito .share_twitter
+{
+	width: 18px;
+	height: 18px;
+	float: left;
+	background: url(../images/twiiter_dogs.png) no-repeat center center;
+	margin: 12px 10px 0 0;
+}
+.content_fotos .fotos_perrito span
+{
+	float: left;
+	color: #7e7e7e;
+	font-size: 13px;
+	margin: 14px 0 0 0;
+}
+.content_fotos .fotos_perrito .facebook_comment
+{
+	width: 216px;
+	height: 38px;
+	float: left;
+	background: #f0f0f0;
+	border: 1px solid #d0d0d0;
+	margin: 10px 0 0 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.content_fotos .fotos_perrito .facebook_comment.face
+{
+	width: auto;
+	height: auto;
+	float: none;
+	background: #fff;
+	border: none;
+	margin: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 5px;
+	border-radius: 0px;
+}
+.content_fotos .fotos_perrito .arrow
+{
+	width: 35px;
+	height: 35px;
+	float: left;
+	border: none;
+	background: url(../images/check.png) no-repeat center center;
+	margin: 11px 0 0 15px;
+	padding: 0;
+}
+
+.malinky-ajax-pagination-loading
+{
+	width: 130px;
+	height: 30px;
+	background: #fff url(../images/loader.gif) no-repeat 15px center;
+	-webkit-border-radius: 5px;
+	line-height: 30px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #737373;
+	text-indent: 30px;
+	color: #7e7e7e;
+	display: block;
+	margin: -40px auto 40px;
+	clear: both;
+}
+.malinky-ajax-pagination-loading img
+{
+	display: none;
+}
+footer,
+footer .banner,
+footer .banner img
+{
+	width: 100%;
+	display: block;
+}
+footer .copyright
+{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+}
+footer .copyright span
+{
+	font-size: 10px;
+	color: #176882;
+	font-weight: 800;
+	letter-spacing: 0px;
+	margin: 0 0 0 20px;
+	display: inline-block;
+}
+footer .copyright .twitter
+{
+	width: 20px;
+	height: 16px;
+	display: inline-block;
+	background: url(../images/twitter_footer.png) no-repeat center center;
+	margin: 0px 0 -3px 1.5%;
+}
+
+footer .copyright .facebook
+{
+	width: 11px;
+	height: 20px;
+	display: inline-block;
+	background: url(../images/facebook_footer.png) no-repeat center center;
+	margin: 0px 0 -3px 1.5%;
+}
+
+footer .copyright .logo_footer_sony
+{
+	width: 116px;
+	height: 19px;
+	display: inline-block;
+	background: url(../images/footer_sony.png) no-repeat center center;
+	margin: 0px 0 -3px 1.5%;
+}
+div.wpcf7 .screen-reader-response
+{
+	width: 320px;
+}
+.wpcf7-form
+{
+	padding: 10px;
+}
+.wpcf7-form label
+{
+	font-size: 14px;
+}
+.wpcf7-form label span
+{
+	font-size: 10px;
+}
+.wpcf7-form textarea
+{
+	height: 100px;
+}
+.wpcf7-submit
+{
+	width: 50%;
+    height: 30px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    padding: 0 !important;
+    line-height: 30px !important;
+    border: none !important;
+    background: rgb(253,172,247) !important;
+    background: -moz-linear-gradient(top, rgba(253,172,247,1) 0%, rgba(68,249,250,1) 100%) !important;
+    background: -webkit-linear-gradient(top, rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%) !important;
+    background: linear-gradient( rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdacf7', endColorstr='#44f9fa',GradientType=0 ) !important;
+    text-shadow: 0 0 5px #999 !important;
+}
+@media (max-width: 710px){
+	.content_fotos
+	{
+		margin: 0 0 80px !important; 
+	}
+	header
+	{
+		float: left;
+	}
+	header .logo
+	{
+		display: block;
+		float: none;
+		margin: 40px auto;
+	}
+	header .content_buscar	
+	{
+		float: none;
+		margin: 0 auto 40px;
+	}
+	header .content_video
+	{
+		max-width: 320px;
+		background-size: contain;
+		height: 200px;
+	}
+	header .content_video iframe
+	{
+		width: 222px;
+		height: 128px;
+		top: 20px;
+		left: 0px;
+	}
+	.content_buttons
+	{
+		height: auto;
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+	.content_buttons button
+	{
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	.content_buttons p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		font-size: 18px;
+	}
+
+
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

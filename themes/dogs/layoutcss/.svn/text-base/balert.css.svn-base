@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  -------------------------------------------------------------	
+	Description: browser alert
+	-------------------------------------------------------------	*/
+
+.cont_balert {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	color: #5c5c5c;
+	overflow: hidden;
+	text-align: center;
+}
+.cont_balert .box_text_alert
+{
+	width: 400px;
+	height: 481px;
+	padding: 50px 0px 0px;
+	margin: 0px 0px 0px 35px;
+}
+.cont_balert .box_text_alert h1
+{
+	color: #8fbd46;
+	font-size: 37px;
+}
+.cont_balert .box_text_alert h2
+{
+	color: #fff;
+	font-size: 50px;
+	text-transform: none;
+	text-align: right;
+}
+.cont_balert .box_text_alert span.txt_b
+{
+	margin: 15px 0px 20px;
+	display: block;
+}
+.cont_balert .box_text_alert span, .cont_balert .box_text_alert p
+{
+	color: #042656;
+	font-size: 20px;
+	text-align: left;
+}
+.cont_balert .box_text_alert p,.cont_balert .box_text_alert span.browser_b
+{
+	font-size: 15px;
+	line-height: 17px;
+}
+.cont_balert .box_text_alert span.browser_b
+{
+    margin: 25px 0px 17px;
+	
+    display: block;
+    text-align: center;
+}
+
+.cont_balert ul { text-align:center;}
+.cont_balert ul li { display: inline-block; }
+
+.cont_balert ul li a { 
+	text-decoration:none;
+	display:inline-block;
+	width: 35px;
+	height: 35px;
+	background: transparent url(../../app/images/backgrounds/balert.png) no-repeat 0 0px;
+	text-indent:-10000px;
+	margin: 0 12px 0 0;
+}
+
+.cont_balert ul li a.last {margin:0;}
+
+.cont_balert ul li.ie a:hover { background-position: 0 -33px; }
+.cont_balert ul li.ffx a { background-position: -47px 0px; }
+.cont_balert ul li.ffx a:hover { background-position: -47px -34px; }
+.cont_balert ul li.chr a { background-position: -88px 0px; }
+.cont_balert ul li.chr a:hover { background-position: -88px -33px; }
+.cont_balert ul li.sfr a { background-position: -181px 0; }
+.cont_balert ul li.sfr a:hover { background-position: -181px -34px; }
+.cont_balert ul li.ope a { background-position: -135px 0; }
+.cont_balert ul li.ope a:hover { background-position: -135px -34px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

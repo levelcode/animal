@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* CSS Document */
+.main_form form, .main_thanks .thanks, .rules
+{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	max-width: 638px;
+	color: #5c5c5c;
+	padding: 20px 50px;
+	-webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;
+	background: url(../../app/images/backgrounds/bg_form.png);
+	overflow: hidden;
+}
+.main_form form .send_center
+{
+	width: 100%;
+	margin: 60px auto 0px;
+}
+.main_form form .send_center .box_form
+{
+	margin: 0px auto;	
+	width: 183px;
+	display: block;
+	position: relative;
+	height: 45px;
+}
+
+.main_form form .box_form
+{
+	width: 276px;
+	display: inline-block;
+	margin: 6px 35px 0px 0px;
+
+}
+.main_form form .box_form label, .main_form form .box_form input, .main_form form .box_form select
+{
+	width: 86%;
+	border: none;
+	float: left;
+	height: 25px;
+}
+.main_form form .box_form select 
+{
+    width: 61px;
+    border: 1px solid #4c97bb;
+    height: 35px;
+}
+.main_form form .box_form span
+{
+	float: left;
+	font-size: 13px;
+	margin: 5px 16px 0px 0px;
+}
+.main_form form .box_form select.state
+{
+    width: 100%;
+	
+}
+.main_form form .hundred
+{
+	width: 100%;
+	margin-top: 20px;
+}
+.main_form form .box_form input.check
+{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin: 4px 5px 0px 0px;
+}
+.main_form form .box_form input, .main_form form .box_form select
+{
+	margin-right: 10px;
+	padding: 5px 18px;	
+	/* height: 35px; */
+	border: 1px solid #4c97bb;
+	-moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+	box-shadow: inset 1px 1px 5px #666;
+}
+.main_form form .birthday
+{
+	width: 276px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.main_form form .birthday label
+{
+	font-size: 13px;
+	display: block;
+	height: auto;
+	margin: 5px 0px;
+}
+body .main_form form .birthday select.year
+{
+	width: 134px;
+	height: 35px;
+	margin: 0px;
+}
+.main_form form span.loader
+{
+	background: url(loader.gif) no-repeat center;
+	width: 32px;
+	height: 32px;
+	/* float: left; */	
+	position: absolute;
+}
+.main_form form input.submit
+{
+	width: 175px;
+	height: 36px;
+	border:none;
+	background: url(../../app/images/buttons/submit_sea.png);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 25px;
+	-webkit-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    3px 3px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         3px 3px 5px rgba(50, 50, 50, 0.75);
+
+}
+.main_form form .alert
+{
+	background: red;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 74%;
+	float: left;
+	height: 20px;
+	color: #fff;
+	padding: 2% 9%;
+	background: #8ebc46 url(../../app/images/backgrounds/alert_icon.png) 14px center no-repeat; 
+	line-height: 25px;
+	border: none;
+	
+}
+.clear
+{
+	clear: both;
+	height: 11px;
+}
+.main_thanks .thanks h1, .rules h1
+{
+	font-size: 37px;
+	color: #000;
+	margin-top: 100px;
+}
+.main_thanks .thanks h2
+{
+	font-size: 20px;
+	color: #5c5c5c;
+	font-weight: normal;
+	text-transform: none;
+}
+.main_thanks .thanks .share
+{
+	width: 115px;
+	height: 57px;
+	margin: 28px auto 195px;
+}
+.main_thanks .thanks .share .facebook, .main_thanks .thanks .share .twitter
+{
+	background:url(../../app/images/buttons/share.png) no-repeat;
+	width: 55px;
+	height: 57px;
+	display: block;
+	float: left;
+}
+.main_thanks .thanks .share .twitter
+{
+	background-position: -57px 0px; 
+}
+
+
+@media  (max-width: 767px){
+	
+	.main_form form, .main_thanks .thanks
+	{
+		width: 90%;
+		padding: 0px;
+	
+		-webkit-border-radius: 0px; 
+		-moz-border-radius: 0px; 
+		border-radius: 0px;
+	}
+	.main_form form .box_form
+	{
+		width: 93%;
+		margin: 6px auto;
+	
+		display: block;
+		overflow: hidden;
+	}
+	.main_form form .birthday select
+	{
+		width: 100%;
+		margin: 5px 0px;	
+	}
+	.main_form form .alert
+	{
+		padding: 0px;
+		margin: 12px auto;
+		display: block;
+		padding: 2% 25%;
+		float: none;
+		width: 42%;
+	
+	}
+	.main_form form .birthday select.year
+	{
+		width: 100% !important;
+	
+		margin: 5px 0px;
+	}
+	.main_form form .box_form input.check
+	{
+		clear: both;
+	}
+	.main_form form .box_form span
+	{
+		width: 80%;
+	}
+	.main_form form .send_center
+	{
+		margin: 27px 0px 35px;	
+	}
+	.main_form form .box_form input
+	{
+		width: 100%;
+	}
+	.main_thanks .thanks h1
+	{
+		width: 94%;
+		margin: 100px auto 0px;
+		font-size: 28px;
+		text-align: center;
+	}
+	.main_thanks .thanks h2
+	{
+		width: 93%;
+		margin: 8% auto 6%;
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

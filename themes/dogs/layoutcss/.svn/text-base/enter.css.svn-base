@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+.main_enter
+{
+	height: 814px;
+}
+
+.main_enter .box_enter
+{
+	height: 480px;
+	background: url(../../app/images/backgrounds/enter.png) 400px 0px no-repeat;
+	padding-bottom: 10px;
+}
+.main_enter .box_enter .text_box_enter
+{
+	width: 380px;
+	padding: 55px 0px 0px;
+	margin-left: 40px;
+}
+.main_enter .box_enter .text_box_enter h1
+{
+	color: #8fbd46;
+	font-size: 40px;
+}
+.main_enter .box_enter .text_box_enter h2
+{
+	color: #fff;
+	font-size: 54px;
+	text-transform: none;
+	margin-top: -7px;
+}
+.main_enter .box_enter .text_box_enter p
+{
+	color: #042656;
+	font-size: 15px;
+	line-height: 19px;
+	width: 380px;
+}
+.main_enter .box_enter .text_box_enter p a
+{
+	color: #042656;
+}
+.main_enter .box_enter .text_box_enter a.enter_button
+{
+	width: 188px;
+	height: 38px;
+	text-align: center;
+	display: block;
+	border: 1px solid #90b67a;
+	line-height: 40px;
+	text-decoration: none;
+	margin-top:30px;
+	background: url(../../app/images/buttons/submit_sea.png);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 22px;
+	-webkit-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
+	box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
+}
+
+.main_enter .box_enter .text_box_enter span.title_enter
+{
+	color: #fff;
+	font-size: 15px;
+	margin-bottom: 5px;
+	display: block;
+}
+.main_enter .list_winner, .main_enter .photo_winner
+{
+	width: 430px;
+	height: 240px;
+	float: left;
+	margin-left: 40px;
+	color: #5c5c5c;
+	padding: 25px 30px;
+	-webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;
+	background: url(../../app/images/backgrounds/bg_form.png);
+	overflow: hidden;
+}
+.main_enter .photo_winner
+{
+	width: 180px;
+	margin-left: 10px;
+}
+.main_enter .list_winner .text_winner
+{
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #8fbd46;
+	color: #8fbd46;
+}
+.main_enter .list_winner .text_winner span.title_winner
+{
+	font-size: 37px;
+	float: left;
+}
+.main_enter .list_winner .text_winner span.date_winner
+{
+	font-size: 15px;
+	float: right;
+	margin-top: 15px;
+}
+.main_enter .list_winner .box_list_winner
+{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

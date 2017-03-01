@@ -1,0 +1,36 @@
+/* CSS Document */
+
+/*-------------------------------------------------------------	
+	Description:	IE8
+	-----------------------------------------------------------	
+*/
+
+/* ============ 3. GLOBAL ============ */
+input {
+	border-color: transparent;
+}
+/* ============ 4. CONTAINER ============ */
+.container {
+	width: 960px;
+}
+/* ============ 10. MISCELLANEOUS ============ */
+/* Layer Social */
+a.enter {
+	margin: 0 auto;
+}
+a.enter,
+.layer .social ul li a {
+	display: block;
+}
+.thanks .tell .share a,
+.thanks .boxes_grey.small > div a {
+	font-size: 0;
+	text-indent: 0;
+}
+/* Rules */
+.rules {
+	zoom: 1;
+}
+.rules h4 {
+	display: inline-block;
+}

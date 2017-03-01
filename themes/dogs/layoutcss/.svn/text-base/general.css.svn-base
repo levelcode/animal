@@ -1,0 +1,957 @@
+@charset "utf-8";
+@import url("reset.css");
+/* ========================================
+
+Website Author: Edgar Andrés Rico
+Support: http: //www.hellodebrain.com
+Copyright 2013. All Rights Reserved.
+
+===========================================
+
+Table of contents
+---------------------------
+
+	3. GLOBALS
+	4. CONTAINER
+	5. HEADER
+	6. CONTENT
+	7. FOOTER
+	8. BUTTONS
+	9. BOXES
+	10. MISCELLANEOUS
+
+======================================== */
+
+/* ========================================
+		GENERAL
+======================================== */
+
+/* ============ 3. GLOBAL ============ */
+
+body {
+	color: #d9d9d9;
+	font-family: Helvetica, Arial, sans-serif;
+}
+h2,
+h3 {
+	line-height: 110%;
+}
+h2 {
+	color: #f4bb59;
+	font-size: 3.4em;
+	margin: 0 0 3.3%;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 1.8em;
+	margin: 0 0 2.4%;
+}
+p {
+	font-size: 1.3em;
+	line-height: 110%;
+	margin: 0 0 1em;
+}
+p.big {
+	font-size: 1.38em;
+}
+a {
+	color:#5c5c5c;
+}
+a:hover {
+	color: #6ea842;
+}
+:focus {
+	outline: 0;
+}
+img {
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+}
+label {
+	display: block;
+	font-size: 1.3em;
+	line-height: 110%;
+	margin: 0 0 0.5em;
+}
+input[type="text"] {
+	appearance: button;
+	-webkit-appearance: button;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	font-size: 1.3em;
+	outline: none;
+	padding: 0.3em 2.5%;
+}
+ input::-webkit-input-placeholder {
+ color: rgba(88,94,98,.75);
+}
+input::-moz-placeholder {
+ color: rgba(88,94,98,.75);
+}
+input:-moz-placeholder {
+ color: rgba(88,94,98,.75);
+}
+input:-ms-input-placeholder {
+ color: rgba(88,94,98,.75);
+}
+form + a {
+	display: block;
+	font-size: 1.1em;
+	text-align: center;
+}
+/* ============ 4. CONTAINER ============ */
+#main-container
+{
+	max-width: 810px;
+	height: auto;
+	margin: 0px auto;
+	border: 1px solid red;
+}
+.bg_general
+{
+	background: url(../../app/images/backgrounds/bg_general.jpg) no-repeat;
+}
+.bg_enter
+{
+	background: url(../../app/images/backgrounds/bg_enter.jpg) no-repeat;
+}
+.bg_like
+{
+	background: url(../../app/images/backgrounds/bg_like.jpg) no-repeat;
+}
+.bg_balert
+{
+	background: url(../../app/images/backgrounds/bg_balert.jpg) no-repeat;
+	height: 533px;
+}
+.container {
+	background: #de3837 url(../images/graphics/grf_content.png) center center;
+	box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 320px;
+}
+/* ============ 5. HEADER ============ */
+.header {
+	background: url(../images/graphics/grf_header.png) no-repeat center top;
+	background-size: 100%;
+	padding-bottom: 68%;
+	position: relative;
+	z-index: 1;
+}
+.header a {
+	position: absolute;
+	right: 15.7%;
+	top: 46.25%;
+}
+/* ============ 6. CONTENT ============ */
+.content {
+	overflow: hidden;
+	background: transparent url(../images/backgrounds/bg_content.png) ;
+	background-size: 960px 100%;
+	margin: -35% auto 0;
+	max-width: 68.75%;
+	width: auto !important;
+	width: 68.75%;
+	position: relative;
+	z-index: 2;
+}
+.content .﻿cont_alert {
+	overflow: hidden;
+}
+.content .info {
+	padding: 3.3%;
+}
+.content .info .prize {
+	overflow: hidden;
+	padding: 3.3% 0 6.6%;
+}
+.content .info .prize div > img {
+	border: solid 1px #f4bb59;
+}
+.content .info .prize > div {
+	float: right;
+	max-width: 64%;
+}
+.content .info .prize > div:first-child {
+	float: left;
+	width: 32%;
+}
+.content .info .prize strong {
+	color: #f4bb59;
+}
+.content .info .prize p,
+.content .info .prize li {
+	font-size: 1.4em;
+	margin: 0 0 0.25em;
+}
+.content .info .prize li {
+	line-height: 125%;
+	list-style-type: disc;
+	margin: 0 0 0 1em;
+}
+.content .info .prize p:first-child {
+	font-size: 1.7em;
+	margin: 0 0 1em;
+}
+.content .info .prize p:first-child strong {
+	font-size: 1.1em;
+}
+/* ============ 7. FOOTER ============ */
+.footer {
+	background: url(../images/graphics/grf_footer.png) no-repeat center bottom;
+	background-size: 100%;
+	margin: -47% 0 0;
+	padding-bottom: 65.5%;
+	position: relative;
+}
+/* copyright */
+.copyright {
+	margin: -4em 0 0;
+	position: relative;
+}
+.copyright p {
+	font-size: 1em;
+	line-height: 150%;
+	padding: 0 1em 1em;
+	text-align: center;
+}
+.copyright a {
+	text-decoration: none;
+}
+/* ============ 8. BUTTONS ============ */
+
+/* ============ 9. BOXES ============ */
+
+/* ============ 10. MISCELLANEOUS ============ */
+/* Alert */
+.alert {
+	background: url(../images/misc/alert.png) no-repeat 10px center;
+	border: solid 1px #f4bb59;
+	border-radius: 8px;
+	-webkit-border-radius: 5px;
+	color: #f4bb59;
+	font-size: 1.4em;
+	margin: 0 0 1em;
+	padding: 0.75em 0.75em 0.75em 3em;
+}
+.alert span {
+	display: block;
+	padding: 0 0 0 2em;
+}
+/* Browse */
+.container_upload {
+	background: url("../images/buttons/btn.png") no-repeat 0 -600px;
+	height: 42px;
+	overflow: hidden;
+	position: relative;
+	width: 208px;
+}
+.container_upload:hover,
+.container_upload input {
+	cursor: pointer !important;
+}
+.container_upload_input {
+	display: block;
+	height: 100%;
+	line-height: 42px;
+	position: absolute;
+	z-index: 100;
+	-moz-opacity: .01;
+	filter: alpha(opacity=01);
+	opacity: .01;
+}
+/* Logos */
+.logos {
+	margin: 0 0 3em;
+	overflow: hidden;
+	position: relative;
+}
+.logos span.logo1 {
+	float: left;
+}
+.logos span.logo2 {
+	left: 50%;
+	margin: 0 0 0 -28px;
+	position: absolute;
+	top: 0;
+}
+.logos span.logo3 {
+	float: right;
+}
+/* Layer Social */
+.layer .social {
+	background: #1e1e1e;
+	border: solid 1px #303233;
+	left: 50%;
+	margin: 0 0 0 -250px;
+	padding: 50px 20px;
+	position: absolute;
+	top: 40%;
+	width: 460px;
+}
+.layer .social p {
+	background: url(../images/backgrounds/bg_layer_social.png) no-repeat center 0;
+	height: 54px;
+	margin: 0 auto 50px;
+	max-width: 314px;
+}
+.layer .social span {
+	display: block;
+	overflow: hidden;
+}
+.layer .social ul li {
+	display: block;
+	float: right;
+}
+.layer .social ul li:first-child {
+	float: left;
+}
+.layer .social ul li a {
+	height: 50px;
+	width: 221px;
+}
+.layer .social ul li a.facebook {
+	background-position: 0 -360px;
+}
+.layer .social ul li a.facebook:hover {
+	background-position: 0 -420px;
+}
+.layer .social ul li a.twitter {
+	background-position: 0 -480px;
+}
+.layer .social ul li a.twitter:hover {
+	background-position: 0 -540px;
+}
+/* Layer Profile */
+.layer .profile {
+	background: #1e1e1e;
+	border: solid 1px #303233;
+	left: 50%;
+	margin: 0 0 0 -210px;
+	max-width: 300px;
+	padding: 60px;
+	position: absolute;
+	top: 10%;
+}
+.layer .profile h2 {
+	color: #FFF;
+	font-size: 2em;
+	margin: 0 0 0.75em;
+	text-align: left;
+}
+.layer .profile input[type=text] {
+	background: #a4adb5;
+	border-top: solid 2px #787f84;
+	color: #585e62;
+	font-size: 1.23em;
+	height: 37px;
+	line-height: 37px;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 95%;
+}
+.layer .profile .newphoto {
+	margin: 0 0 3em;
+	overflow: hidden;
+}
+.layer .profile .newphoto img {
+	float: left;
+}
+.layer .profile .newphoto > span {
+	display: block;
+	float: right;
+	text-align: left;
+	width: 75%;
+}
+.layer .profile .newphoto > span p {
+	color: #585e62;
+	margin: 0.75em 0 0;
+}
+.layer .profile .gender {
+	margin: 0 0 2em;
+	overflow: hidden;
+}
+.layer .profile .gender h3 {
+	color: #d9d9d9;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0 0 1em;
+	text-align: left;
+}
+.layer .profile .gender .male,
+.layer .profile .gender .female {
+	float: left;
+}
+.layer .profile .gender .female {
+	margin: 0 0 0 18%;
+}
+.layer .profile .gender .unknown {
+	float: right;
+}
+.layer .profile .info {
+	background: url(../images/backgrounds/bg_layer_profile_info.png) no-repeat 0 0;
+	padding-top: 2em;
+	text-align: left;
+}
+.layer .profile .info form > p {
+	overflow: hidden;
+	text-align: left;
+}
+.layer .profile .info p label {
+	font-size: 1em;
+	line-height: 125%;
+	width: 90%;
+}
+.layer .profile .info p label,
+.layer .profile .info p input[type=checkbox] {
+	float: left;
+}
+/* Loading */
+
+.loading {
+	left: 50%;
+	margin: 0 0 0 -16px;
+	position: absolute;
+	top: 10%;
+	z-index: 9;
+}
+.loading.social {
+	margin: 50px 0 0 -16px;
+	position: fixed;
+	top: 50%;
+	z-index: 9999;
+}
+/* Video */
+
+.vimeo {
+	position: relative;
+	/*padding-bottom: 56.25%;*/
+	padding-bottom: 38.8%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+.vimeo iframe,
+.vimeo object,
+.vimeo embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Abreviated Rules */
+
+.abrules {
+	overflow: hidden;
+	padding: 3.3% 3.3% 1% 3.3%;
+	clear: both;
+	background: url(../../app/images/backgrounds/bg_form.png);
+}
+.abrules p {
+	font-size: 1.1em;
+	text-align: left !important;
+	clear: both;
+
+}
+.abrules p.copyright {
+	font-size: 1em;
+	padding: 2em 0 0;
+}
+/* Box Button */
+.box-btn {
+	margin: 0 0 1.5em;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.box-btn span {
+	background: url(../images/buttons/btn.png) no-repeat 0 -320px;
+	display: block;
+	height: 33px;
+	left: 50%;
+	margin: 0 0 0 -100px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 200px;
+}
+.box-btn span img {
+	margin: 4px auto 0;
+}
+.box-btn.lprofile span {
+	background: url(../images/buttons/btn.png) no-repeat -110px -700px;
+	display: block;
+	height: 43px;
+	left: 50%;
+	margin: 0 0 0 -54px;
+	position: absolute;
+	text-align: center;
+	top: 1em;
+	width: 107px;
+}
+.box-btn.lprofile span img {
+	margin: 10px auto 0;
+}
+/* Buttons */
+a.btn {
+	background: url(../images/buttons/btn.png) no-repeat;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+a.btn.small {
+	height: 33px;
+}
+a.buy {
+	display: block;
+	width: 158px;
+	background-position: 0 0;
+	left: 50%;
+	margin: 0 0 0 -79px;
+}
+a.buy:hover {
+	background-position: 0 -40px;
+}
+a.enter {
+	background-position: 0 -240px;
+	width: 197px;
+}
+a.enter:hover {
+	background-position: 0 -280px;
+}
+a.idpass {
+	background-position: 0 -80px;
+	margin: 0.5em 0 0;
+	width: 307px;
+}
+a.idpass:hover {
+	background-position: 0 -120px;
+}
+a.other {
+	background-position: 0 -160px;
+	margin: 1.5em 0 0;
+	width: 262px;
+}
+a.other:hover {
+	background-position: 0 -200px;
+}
+a.submit {
+	background-position: 0 -650px;
+	height: 43px;
+	margin: 1em 0 0;
+	width: 107px;
+}
+a.submit:hover {
+	background-position: 0 -700px;
+}
+a.close {
+	background-position: 0 -750px;
+	height: 29px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 29px;
+}
+a.close:hover {
+	background-position: 0 -790px;
+}
+/* Box Buttons */
+.box-btns {
+	overflow: hidden;
+	text-align: center;
+}
+.box-btns a {
+	margin: 0;
+}
+.box-btns a:first-child {
+	margin: 0 1em 0 0;
+}
+/* ======================== A. HOME ======================== */
+
+.home .forms {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+.home .forms > div {
+	float: right;
+	width: 48.5%;
+}
+.home .forms > div:first-child {
+	float: left;
+}
+.home .forms input {
+	width: 95%;
+}
+.home .forms span {
+	background: #FFF;
+	border: solid 1px #FFF;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.home .forms span.selected {
+	border-color: #f4bb59;
+}
+.home .forms + p {
+	font-size: 1.1em;
+}
+/* District */
+.home .district {
+	overflow: hidden;
+	background: #424242 url(../images/backgrounds/bg_district.png) repeat-x left bottom;
+	margin: 0 0 3em;
+	padding: 1.5em;
+}
+/* Identification */
+.home .district .identification {
+	overflow: hidden;
+}
+.home .district .identification p {
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0;
+	max-width: 38%;
+}
+.home .district .identification p span {
+	color: #f4bb59;
+}
+.home .district .identification a {
+	float: right;
+}
+/* User */
+.home .district .user {
+	overflow: hidden;
+}
+.home .district .user .info {
+	float: left;
+	padding: 0;
+	width: 40%;
+}
+.home .district .user .info img {
+	float: left;
+	margin: 0 1.5em 0 0;
+}
+.home .district .user .info p {
+	color: #f4bb59;
+	font-size: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+}
+.home .district .user .info p:first-child {
+	margin: 0 0 0.5em;
+}
+.home .district .user .info span:first-child {
+	background: url(../images/backgrounds/bg_info_text.png) no-repeat;
+	height: 13px;
+}
+.home .district .user .info span.username {
+	background-position: 0 0;
+}
+.home .district .user .info span.districtid {
+	background-position: 0 -15px;
+}
+.home .district .user a {
+	float: right;
+}
+/* Agree */
+.home .agree {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+.home .agree input {
+	float: left;
+}
+.home .agree label { /*float: right;*/
+	/*width: 96.5%;*/
+	text-align: center;
+}
+/* Custom Form */
+.radio,
+.checkbox {
+	display: block;
+	float: left;
+	margin: 0 0.5em 0 0;
+	position: relative;
+}
+.radio {
+	background: url(../images/buttons/btn_radio.png) no-repeat 0 0;
+	height: 16px;
+	margin-top: -2px;
+	width: 16px;
+}
+.checkbox {
+	background: url(../images/buttons/btn_checkbox.png) no-repeat 0 0;
+	height: 15px;
+	width: 15px;
+}
+/* Rules */
+.rules h1
+{
+	text-align: center;
+	margin: 100px 0px;
+}
+.rules ol li
+{
+	color: #a2a6a3;
+	margin-bottom: 24px;
+}
+.rules ol li span
+{
+	font-weight: bold;
+	font-family: 'Gotham-Bold';
+}
+.rules h4 {
+	background: #F4BB59;
+	color: #000;
+	font-size: 1.6em;
+	font-weight: bold;
+	line-height: 110%;
+	padding: 2.5% 0;
+	text-align: center;
+}
+.rules table {
+	border: solid 1px #FFF;
+	width: 100%;
+}
+.rules table caption {
+	color: #F4BB59;
+	display: block;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+}
+.rules table th {
+	background: #000;
+	font-weight: bold;
+	padding: 1.5% 2.5%;
+}
+.rules table td {
+	background: #222;
+	padding: 1.5% 2.5%;
+}
+.rules table tr:hover th,
+.rules table tr:hover td {
+	background: #F4BB59;
+	color: #000;
+	cursor: default;
+}
+.rules table tr:first-child th {
+	background: #FFF;
+	color: #000;
+}
+.rules table tr:last-child td {
+	font-weight: bold;
+}
+ @media (max-width: 850px) {
+/* ======================== A. HOME ======================== */
+/* Identification */
+.home .district .identification {
+	text-align: center;
+}
+.home .district .identification p {
+	margin: 0 0 0.5em;
+	text-align: left;
+}
+.home .district .identification p,
+.home .district .identification a {
+	float: none;
+	max-width: 100%;
+}
+/* User */
+.home .district .user {
+	text-align: center;
+}
+.home .district .user .info {
+	overflow: hidden;
+	text-align: left;
+	width: auto;
+}
+.home .district .user .info,
+.home .district .user a {
+	float: none;
+}
+}
+ @media (max-width: 760px) {
+/* ============ 10. MISCELLANEOUS ============ */
+
+/* Logos */
+.logos {
+	margin: 0;
+}
+.logos span.logo1,
+.logos span.logo3 {
+	float: none;
+}
+.logos span.logo2 {
+	left: 0;
+	margin: 0;
+	position: static;
+}
+.logos span {
+	display: block;
+	margin: 0 auto 1em !important;
+}
+.logos span img {
+	margin: 0 auto;
+}
+.copyright {
+	background: #000;
+	margin: 0;
+	padding: 1em 0 0;
+}
+}
+ @media (max-width: 660px) {
+/* ======================== A. HOME ======================== */
+.home .agree label {
+	width: auto;
+}
+/* ============ 10. MISCELLANEOUS ============ */
+
+/* Buttons */
+.box-btns a {
+	display: block;
+	margin: 0 auto;
+}
+.box-btns a:first-child {
+	margin: 0 auto 1em;
+}
+}
+ @media (max-width: 550px) {
+/* ============ 10. MISCELLANEOUS ============ */
+.layer {
+	overflow: auto;
+}
+/* Layer Social */
+.layer .social {
+	left: 0;
+	margin: 0;
+	padding: 5% 4.34%;
+	text-align: center;
+	top: 0;
+	width: 91.32%;
+}
+.layer .social p {
+	background-position: center top;
+	background-size: 233px 40px;
+	height: 40px;
+	margin: 0 auto 5%;
+	max-width: 100%;
+}
+.layer .social ul li,
+.layer .social ul li:first-child {
+	float: none;
+}
+.social ul li:first-child {
+	margin: 0 0 5%;
+}
+/* Layer Profile */
+.layer .profile {
+	left: 0;
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%;
+	top: 0;
+}
+.layer .profile .info {
+	max-width: 90%;
+	margin: 0 auto;
+}
+/* Buttons */
+a.idpass {
+	background-size: 184px 449px;
+	background-position: 0 -40px;
+	height: 19px !important;
+	width: 176px;
+}
+a.idpass:hover {
+	background-position: 0 -59px;
+}
+a.other {
+	background-size: 160px 425px;
+	background-position: 0 -75px;
+	height: 17px !important;
+	width: 131px;
+}
+a.other:hover {
+	background-position: 0 -92px;
+}
+}
+ @media (max-width: 480px) {
+/* ============ 6. CONTENT ============ */
+
+.content .info .prize > div,
+.content .info .prize > div:first-child {
+	float: none;
+	max-width: 100%;
+	width: 100%;
+}
+.content .info .prize > div:first-child {
+	margin: 0 0 2em;
+}
+.content .info .prize > div:first-child img {
+	margin: 0 auto;
+	height: 150px;
+}
+.content .info .prize {
+	font-size: 0.875em;
+}
+.content .info .prize p:first-child {
+	margin: 0 0 1em;
+}
+/* ============ 7. FOOTER ============ */
+
+/* copyright */
+
+.copyright p {
+	font-size: 0.9em;
+}
+/* ======================== A. HOME ======================== */
+.home .agree label {
+	width: 99%;
+}
+.home .forms > div {
+	float: none;
+	margin: 0 0 1em;
+	width: 99%;
+}
+.home .forms > div:last-child {
+	float: none;
+}
+.home .forms {
+	margin: 0;
+}
+/* ============ 10. MISCELLANEOUS ============ */
+
+/* Mobile */
+
+.container .content {
+	max-width: 90%;
+}
+/* Loading */
+
+.loading.social {
+	top: 6em;
+}
+/* Layer Profile */
+.layer .profile .info {
+	background-size: 260px 8px;
+}
+}
+/* Coming - Close */
+.coming,
+.closed {
+	min-height: 350px;
+	text-align: center;
+}
+.coming h2,
+.closed h2 {
+	margin: 0;
+	padding: 25% 0 0;
+}
