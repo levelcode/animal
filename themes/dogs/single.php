@@ -30,11 +30,10 @@ get_header(); ?>
 						$ClaseEdad = "EdadMenor";
 
 				?>
-			        <div class="content_fotos content_fotos_posts <?php echo get_field('sexo') . ' ' . $ClaseEdad ?>" data-edad="<?php echo $Edad ?>">
+ 					<div class="content_fotos content_fotos_posts <?php echo get_field('sexo') . ' ' . $ClaseEdad ?> PerritosSingle" style="cursor: pointer" data-edad="<?php echo $Edad ?>" href="#hidden-content_<?php echo $Cont; ?>" data-popup="<?php echo $Cont; ?>" data-id="<?php echo get_the_ID(); ?>">
+
 			            <div class="box_perrito style1">
-			                <a class="PopupPerritos PerritosSingle" href="#hidden-content_<?php echo $Cont; ?>" data-popup="<?php echo $Cont; ?>" data-id="<?php echo get_the_ID(); ?>">
-			                    <div class="nombre_perro"><?php echo get_the_title(); ?></div>
-			                </a>
+			                <div class="nombre_perro"><?php echo get_the_title(); ?></div>
 			                <div class="fotos_perrito">
 			                    <div class="list sliderNormal">
 			                    <?php
@@ -50,14 +49,16 @@ get_header(); ?>
 
 								<a class="PopupForm mundo" href="#contact_form_popup"></a>
 
-			                   	<a href="http://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;text=<?php echo get_field('descripcion')?>" class="share_twitter" title="<?php echo get_the_title(); ?>" target="_blank">Twitter</a>
+			                   	<a href="http://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;text=<?php echo get_field('descripcion')?>" class="share_twitter" title="<?php echo get_the_title(); ?>" target="_blank"></a>
 
 			                    <span>Comment</span>
+								<div class="clear"></div>
 
-			                    <button class="arrow"></button>
 			                </div>
 			            </div>
 			        </div>
+
+
 
 				    <!-- pop up -->
 				    <div class="content_fotos content_fotos_popup" style="display: none;" id="hidden-content_<?php echo $Cont; ?>">
@@ -75,18 +76,19 @@ get_header(); ?>
 				                        }
 				                    ?>
 				                </div>
+								<div class="datos_perro"><span class="Edad_datos"><?php echo $Edad ?></span><span class="Sexo_datos"><?php echo get_field('sexo') ?></span></div>
 
 								<div class"descripcion_perrito"><?php echo get_field("descripcion"); ?></div>
 
 								<a class="PopupForm mundo" href="#contact_form_popup"></a>
 
-			                   	<a href="http://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;text=<?php echo get_field('descripcion')?>" class="share_twitter" title="<?php echo get_the_title(); ?>" target="_blank">Twitter</a>
+			                   	<a href="http://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;text=<?php echo get_field('descripcion')?>" class="share_twitter" title="<?php echo get_the_title(); ?>" target="_blank"></a>
 
 				                <span>Comment</span>
-				                <div class="facebook_comment" id="FBcomments<?php echo get_the_ID(); ?>">
+				                <div class="facebook_commen facet" id="FBcomments<?php echo get_the_ID(); ?>">
 									<div class="fb-comments" data-href="<?php echo get_permalink(); ?>" data-numposts="5"></div>
 				                </div>
-				                <button class="arrow"></button>
+								<div class="clear"></div>
 				            </div>
 				        </div>
 				    </div>

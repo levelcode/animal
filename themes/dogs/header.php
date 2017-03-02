@@ -37,18 +37,22 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-	<div id="wrapper">
-		<header>
-	        <img src="<?php echo get_template_directory_uri(); ?>/images/logosony.png" alt="" class="logo">
+  <div id="wrapper">
+    <header>
+
+          <a href="https://www.sonymobile.com/global-es/products/phones/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logosony.png" alt="" class="logo">
+          </a>
+          
           <form class="content_buscar" role="search" method="get" class="searchform group" action="<?php echo home_url( '/' ); ?>">
               <input type="text" class="search" placeholder="<?php echo esc_attr_x( 'Nombre del canino...', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Resultados:', 'label' ) ?>"/>
               <input class="submit" type="submit" value="BUSCAR">
             </form>
-    	    <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/animalogo.png" alt="" class="logo_central"></a>
+          <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/animalogo.png" alt="" class="logo_central"></a>
 
-        	<div class="content_video">
-	            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Sdxhy5qUr4" frameborder="0" allowfullscreen></iframe>
-        	</div>
+          <div class="content_video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5Sdxhy5qUr4" frameborder="0" allowfullscreen></iframe>
+          </div>
           <?php
               wp_nav_menu( array(
                   'menu'              => 'principal',
@@ -57,4 +61,4 @@
                   'menu_class'        => 'nav navbar-nav navbar-right')
               );
           ?>
-    	</header>
+      </header>

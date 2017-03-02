@@ -16,15 +16,16 @@
 
     <footer>
 
-        <a href="" class="banner">
+        <a href="http://www.elxperiablog.com/" class="banner" target="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg" alt="">
         </a>
 
         <div class="copyright">
             <span>Lorem Impus dolor sit amet 2016</span>
-            <a href="" class="twitter"></a>
-            <a href="" class="facebook"></a>
-            <div class="logo_footer_sony"></div>
+            <a href="https://www.instagram.com/fundacion_animalove/" target="_blank" class="instagram"></a>
+            <a href="https://www.facebook.com/fundacionanimalove/" target="_blank" class="twitter"></a>
+            <a href="https://twitter.com/FAnimalove" target="_blank" class="facebook"></a>
+            <a href="https://www.sonymobile.com/global-es/products/phones/" target="_blank" class="logo_footer_sony"></a>
         </div>
     </footer>
 

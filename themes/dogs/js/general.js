@@ -1,7 +1,19 @@
 $(document).ready(function()
 {
-	var SexoSelected = "";
-	var EdadSelected = "";
+	var SexoSelected = "macho";
+	var EdadSelected = "menor";
+	var TipoSelected = "perros";
+
+	$(".PopupPerritos").click(function(e)
+	{		
+		$(".PopupPerritos").trigger("click");
+	});
+
+	$(".PerritosSingle").click(function(e)
+	{		
+		$(".PerritosSingle").trigger("click");
+	});
+
 
 	$(".PerritosSingle").fancybox(
 	{
@@ -16,6 +28,15 @@ $(document).ready(function()
 	    	var nombrePopup = '.sliderPopup' + Pos;
 
 			sliderInit(nombrePopup);
+
+			var CargoFB = $('#FBcommentsPopup' + ID).attr('data-cargofb');
+
+			if(CargoFB != true)
+			{
+				FB.XFBML.parse(document.getElementById('FBcommentsPopup' + ID));
+
+				$('#FBcommentsPopup' + ID).attr('data-cargofb', 'true');
+			}
 	    },
 		afterClose : function()
 		{
@@ -58,36 +79,71 @@ $(document).ready(function()
     });
 
 	$(".Boton_macho").click(function(e)
-	{  
-	    $('.macho').fadeIn(450);
-	    $('.hembra').hide();
+	{
+		$(this).addClass("active");
+		$(".Boton_hembra").removeClass("active");
 
 	    SexoSelected = "macho";
+
+	    $('.content_fotos_posts').hide();
+	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
 	});
 
 	$(".Boton_hembra").click(function(e)
 	{
-	    $('.hembra').fadeIn(450);
-	    $('.macho').hide();
+		$(this).addClass("active");
+		$(".Boton_macho").removeClass("active");
 
 	    SexoSelected = "hembra";
+
+	    $('.content_fotos_posts').hide();
+	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
 	});
 
 	$(".Boton_menor2").click(function(e)
 	{		
-	    $('.EdadMenor').fadeIn(450);
-	    $('.EdadMayor').hide();
+		$(this).addClass("active");
+		$(".Boton_mayor2").removeClass("active");
 
 	    EdadSelected = "menor";
+
+	    $('.content_fotos_posts').hide();
+	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
 	});
 
 	$(".Boton_mayor2").click(function(e)
 	{
-	    $('.EdadMayor').fadeIn(450);
-	    $('.EdadMenor').hide();
+		$(this).addClass("active");
+		$(".Boton_menor2").removeClass("active");
 
 	    EdadSelected = "mayor";
+
+	    $('.content_fotos_posts').hide();
+	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
 	});
+
+	$(".Boton_perro").click(function(e)
+	{
+		$(this).addClass("active");
+		$(".Boton_gato").removeClass("active");
+
+	    TipoSelected = "perros";
+
+	    $('.content_fotos_posts').hide();
+	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
+	});
+
+	$(".Boton_gato").click(function(e)
+	{
+		$(this).addClass("active");
+		$(".Boton_perro").removeClass("active");
+
+	    TipoSelected = "gatos";
+
+	    $('.content_fotos_posts').hide();
+	    $('.'+SexoSelected+' ,.'+EdadSelected+' ,.'+TipoSelected).fadeIn(450);
+	});
+
 
 	$(".PopupPerritos").fancybox(
 	{
@@ -103,11 +159,14 @@ $(document).ready(function()
 
 			sliderInit(nombrePopup);
 
-			var parse = document.getElementById('FBcomments' + ID);
+			var CargoFB = $('#FBcommentsPopup' + ID).attr('data-cargofb');
 
-			FB.XFBML.parse(document.getElementById('FBcomments' + ID));
+			if(CargoFB != true)
+			{
+				FB.XFBML.parse(document.getElementById('FBcommentsPopup' + ID));
 
-			//$(nombrePopup).slick( "slickGoTo", 1 );
+				$('#FBcommentsPopup' + ID).attr('data-cargofb', 'true');
+			}
 	    },
 		afterClose : function()
 		{
@@ -130,7 +189,7 @@ $(document).ready(function()
 	{
 		var Elementos = 0;
 		var Pos = 0;
-
+	    
 		$('.sliderNormal').each(function(i, obj)
 		{
 			if($(this).hasClass('slick-initialized') == false)
