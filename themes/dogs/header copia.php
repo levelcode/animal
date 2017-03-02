@@ -49,12 +49,4 @@
         	<div class="content_video">
 	            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Sdxhy5qUr4" frameborder="0" allowfullscreen></iframe>
         	</div>
-          <?php
-              wp_nav_menu( array(
-                  'menu'              => 'principal',
-                  'depth'             => 2,
-                  'container'         => 'div',
-                  'menu_class'        => 'nav navbar-nav navbar-right')
-              );
-          ?>
     	</header>
