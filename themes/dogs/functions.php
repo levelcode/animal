@@ -156,3 +156,9 @@ function wp_change_search_url_rewrite()
 	}	
 }
 //add_action( 'template_redirect', 'wp_change_search_url_rewrite' );
+
+function get_tipo($ID)
+{
+	$categoria = get_the_category($ID);
+	return $categoria[0]->slug;
+}

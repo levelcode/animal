@@ -15,11 +15,14 @@
 get_header(); ?>
 
     <div class="content_buttons">
-        <button class="Boton_macho active"></button>
+        <button class="Boton_macho"></button>
         <button class="Boton_hembra"></button>
-        <button class="Boton_menor2 active"><span>-2</span></button>
-        <button class="Boton_mayor2"><span>+2</span></button>
-        <button class="Boton_perro active"><span>perro</span></button>
+        <button class="Boton_menor2"><span>-</span></button>
+        <div class="content_Edadnumero">
+        	<span class="Edadnumero">2</span>
+        </div>        
+        <button class="Boton_mayor2"><span>+</span></button>
+        <button class="Boton_perro"><span>perro</span></button>
         <button class="Boton_gato"><span>gato</span></button>
 
         <p>Encuéntra a tu nuevo mejor amigo</p>
@@ -51,7 +54,7 @@ get_header(); ?>
 						$ClaseTemp = "content_fotos";
 					}
 				?>
-				        <div class="<?php echo $ClaseTemp ?> content_fotos_posts <?php echo get_field('sexo') . ' ' . $ClaseEdad . ' ' . $Tipo?> PopupPerritos" style="cursor: pointer" data-edad="<?php echo $Edad ?>" href="#hidden-content_<?php echo $Cont; ?>" data-popup="<?php echo $Cont; ?>" data-id="<?php echo get_the_ID(); ?>">
+				        <div class="<?php echo $ClaseTemp ?> content_fotos_posts <?php echo get_field('sexo') . ' ' . $ClaseEdad . ' ' . $Tipo . ' Edad' . $Edad ?> PopupPerritos" style="cursor: pointer" data-edad="<?php echo $Edad ?>" href="#hidden-content_<?php echo $Cont; ?>" data-popup="<?php echo $Cont; ?>" data-id="<?php echo get_the_ID(); ?>">
 							
 				            <div class="box_perrito style1">
 				                    <div class="nombre_perro"><?php echo get_the_title(); ?></div>
@@ -110,6 +113,8 @@ get_header(); ?>
 				            </div>
 				        </div>
 				    </div>
+
+				    
 				    <!-- pop up -->
 
 				<?php

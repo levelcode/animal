@@ -1,8 +1,9 @@
 $(document).ready(function()
 {
-	var SexoSelected = "macho";
-	var EdadSelected = "menor";
-	var TipoSelected = "perros";
+	var SexoSelected = "";
+	var EdadSelected = "";
+	var TipoSelected = "";
+	var EdadNumberSelected = "";
 
 	$(".PopupPerritos").click(function(e)
 	{		
@@ -80,13 +81,25 @@ $(document).ready(function()
 
 	$(".Boton_macho").click(function(e)
 	{
-		$(this).addClass("active");
-		$(".Boton_hembra").removeClass("active");
+			$(this).addClass("active");
+			$(".Boton_hembra").removeClass("active");
 
-	    SexoSelected = "macho";
+		  SexoSelected = "macho";
 
-	    $('.content_fotos_posts').hide();
-	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
+		  $('.content_fotos_posts').hide();
+
+		  var ClasesTemp = '.'+SexoSelected;
+
+			if(EdadSelected != "")
+				ClasesTemp = ClasesTemp + '.' + EdadSelected;
+
+			if(TipoSelected != "")
+				ClasesTemp = ClasesTemp + '.' + TipoSelected;
+
+			if(EdadNumberSelected != "")
+				ClasesTemp = ClasesTemp + '.Edad' + EdadNumberSelected;
+
+		  $(ClasesTemp).fadeIn(450);
 	});
 
 	$(".Boton_hembra").click(function(e)
@@ -97,29 +110,87 @@ $(document).ready(function()
 	    SexoSelected = "hembra";
 
 	    $('.content_fotos_posts').hide();
-	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
+
+		  var ClasesTemp = '.'+SexoSelected;
+
+			if(EdadSelected != "")
+				ClasesTemp = ClasesTemp + '.' + EdadSelected;
+
+			if(TipoSelected != "")
+				ClasesTemp = ClasesTemp + '.' + TipoSelected;
+
+			if(EdadNumberSelected != "")
+				ClasesTemp = ClasesTemp + '.Edad' + EdadNumberSelected;
+
+		  $(ClasesTemp).fadeIn(450);
 	});
 
 	$(".Boton_menor2").click(function(e)
 	{		
 		$(this).addClass("active");
+
+		var Valor = $(".Edadnumero").text();
+    
+    if(Valor > 0)
+    {
+	    Valor --;     
+
+			EdadNumberSelected = Valor; 
+	    $(".Edadnumero").text(Valor);    
+    }
+
 		$(".Boton_mayor2").removeClass("active");
 
-	    EdadSelected = "menor";
+	  EdadSelected = "menor";
 
-	    $('.content_fotos_posts').hide();
-	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
+	  $('.content_fotos_posts').hide();
+
+		var ClasesTemp = '.'+EdadSelected;
+
+		if(SexoSelected != "")
+			ClasesTemp = ClasesTemp + '.' + SexoSelected;
+
+		if(TipoSelected != "")
+			ClasesTemp = ClasesTemp + '.' + TipoSelected;
+
+		if(EdadNumberSelected != "")
+			ClasesTemp = ClasesTemp + '.Edad' + EdadNumberSelected;
+
+		$(ClasesTemp).fadeIn(450);
 	});
 
 	$(".Boton_mayor2").click(function(e)
 	{
 		$(this).addClass("active");
+
+		var Valor = $(".Edadnumero").text();
+    
+    if(Valor < 20)
+    {
+    	Valor ++;
+
+    	EdadNumberSelected = Valor;
+	    $(".Edadnumero").text(Valor);    
+    }
+    
 		$(".Boton_menor2").removeClass("active");
 
-	    EdadSelected = "mayor";
+	  EdadSelected = "mayor";
 
-	    $('.content_fotos_posts').hide();
-	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
+	  $('.content_fotos_posts').hide();
+
+		var ClasesTemp = '.'+EdadSelected;
+
+		if(SexoSelected != "")
+			ClasesTemp = ClasesTemp + '.' + SexoSelected;
+
+		if(TipoSelected != "")
+			ClasesTemp = ClasesTemp + '.' + TipoSelected;
+
+		if(EdadNumberSelected != "")
+			ClasesTemp = ClasesTemp + '.Edad' + EdadNumberSelected;
+
+		$(ClasesTemp).fadeIn(450);
 	});
 
 	$(".Boton_perro").click(function(e)
@@ -130,7 +201,19 @@ $(document).ready(function()
 	    TipoSelected = "perros";
 
 	    $('.content_fotos_posts').hide();
-	    $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected).fadeIn(450);
+
+		var ClasesTemp = '.'+TipoSelected;
+
+		if(SexoSelected != "")
+			ClasesTemp = ClasesTemp + '.' + SexoSelected;
+
+		if(EdadSelected != "")
+			ClasesTemp = ClasesTemp + '.' + EdadSelected;
+
+		if(EdadNumberSelected != "")
+			ClasesTemp = ClasesTemp + '.Edad' + EdadNumberSelected;
+
+		$(ClasesTemp).fadeIn(450);
 	});
 
 	$(".Boton_gato").click(function(e)
@@ -141,7 +224,20 @@ $(document).ready(function()
 	    TipoSelected = "gatos";
 
 	    $('.content_fotos_posts').hide();
-	    $('.'+SexoSelected+' ,.'+EdadSelected+' ,.'+TipoSelected).fadeIn(450);
+
+		var ClasesTemp = '.'+TipoSelected;
+
+		if(SexoSelected != "")
+			ClasesTemp = ClasesTemp + '.' + SexoSelected;
+
+		if(EdadSelected != "")
+			ClasesTemp = ClasesTemp + '.' + EdadSelected;
+
+		if(EdadNumberSelected != "")
+			ClasesTemp = ClasesTemp + '.Edad' + EdadNumberSelected;
+
+		$(ClasesTemp).fadeIn(450);
+
 	});
 
 
@@ -208,15 +304,10 @@ $(document).ready(function()
 			}
 		});
 		
-		if(SexoSelected == "macho")
+		if(SexoSelected != "")
 		{
-		    $('.macho').fadeIn(450);
-		    $('.hembra').hide();
-		}
-		else if(SexoSelected == "hembra")
-		{
-		    $('.hembra').fadeIn(450);
-		    $('.macho').hide();
+		  $('.content_fotos_posts').hide();
+		  $('.'+SexoSelected+'.'+EdadSelected+'.'+TipoSelected+'.Edad'+EdadNumberSelected).fadeIn(450);			
 		}
 
 		Pos = 0;

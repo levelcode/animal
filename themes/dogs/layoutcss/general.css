@@ -179,10 +179,8 @@ header .content_video iframe
 .content_buttons button.Boton_menor2 span,
 .content_buttons button.Boton_mayor2 span
 {
-	width: 100%;
-	height: 100%;
-	font-size: 29px;
-    line-height: 39px;
+	font-size: 27px;
+	line-height: 14px;
 	display: block;
 	background: rgb(253,172,247); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(253,172,247,1) 0%, rgba(68,249,250,1) 100%); /* FF3.6-15 */
@@ -192,6 +190,8 @@ header .content_video iframe
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: 600;
+	display: inline-block;
+	margin: 0 1px;
 }
 .content_buttons button.Boton_menor2.active span,
 .content_buttons button.Boton_mayor2.active span
@@ -529,6 +529,73 @@ div.wpcf7 .screen-reader-response
 .fancybox-close
 {
 	display: none !important;
+}
+.menu-principal-container
+{
+	width: 100%;
+	display: block;
+}
+.menu-principal-container ul
+{
+	height: auto;
+	display: block;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+}
+.menu-principal-container ul li
+{
+    width: auto;
+    display: inline-block;
+    padding: 10px 10px;
+    background: #176882;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #999;
+}
+.menu-principal-container ul li a
+{
+	font-size: 17px;
+	color: #fff;
+	text-decoration: none;
+}
+.content_Edadnumero
+{
+	display: inline-block;
+    width: 58px;
+    height: 52px;
+    background: #fff;
+    border: none;
+    margin: 0 5px 0;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+}
+.Edadnumero
+{
+	width: 58px;
+    height: 52px;
+    border: none;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 27px;
+    line-height: 49px;
+    display: block;
+    background: rgb(253,172,247);
+    background: -moz-linear-gradient(top, rgba(253,172,247,1) 0%, rgba(68,249,250,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%);
+    background: linear-gradient( rgba(253,172,247,1) 0%,rgba(68,249,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdacf7', endColorstr='#44f9fa',GradientType=0 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 1px;
 }
 @media (max-width: 710px){
 	.content_fotos
